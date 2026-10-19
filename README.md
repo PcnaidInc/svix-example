@@ -32,6 +32,12 @@ You can find general usage documentation at <https://docs.svix.com>. For complet
 
 To stay up-to-date with new features and improvements be sure to watch our repo!
 
+## CI
+
+The CI workflow (`.github/workflows/ci.yml`) runs on pull requests and pushes to `main`. It performs:
+- **Lint**: ESLint check (`npm run lint:eslint`)
+- **Build**: Next.js production build (`npm run build`)
+
 ## Code structure
 
 This codebase contains example code for a webhooks provider (Svix customer), a webhook consumer (Svix customer's customer), and some boilerplate Next.js code. It includes both the UI parts and the server API parts.
